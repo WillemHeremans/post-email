@@ -1,0 +1,226 @@
+/* Fonts */
+@font-face {
+font-family: "Lobster";
+src: url(../../assets/fonts/Lobster.eot); /* Pour IE9 Compat mode */
+src: local('Lobster'), local('Lobster-Regular'),
+     url(../../assets/fonts/Lobster.eot?) format('eot'),
+     url(../../assets/fonts/Lobster.woff) format('woff'),
+     url(../../assets/fonts/Lobster.otf) format("otf"),
+     url(../../assets/fonts/Lobster.ttf) format("truetype");
+
+}
+
+@font-face {
+font-family: Linux Libertine O;
+src: local("Linux Libertine O"),
+     url(../../assets/fonts/LinLibertine_R.otf) format("otf");
+}
+
+@media (max-width: 1000px){
+    header{
+        /* Reverse the axis of the header, making it vertical. */
+        flex-direction: column;
+
+        /* Align items to the begining (the left) of the header. */
+        align-items: flex-start;
+    }
+}
+
+/* Modal Box
+
+#modalCheck{
+display: none;
+}
+*/
+.modalLayer{
+  overflow: auto;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+ #formation:target, #experiences:target, #langues:target, #objectif:target{
+display: block;
+}
+.popup_block{
+
+  background: rgba(230, 230, 250, 0.7);
+  padding: 20px;
+  border: 0 solid rgb(219, 54, 174, 0.4);
+  position: relative;
+  margin: 5% auto;
+  width: 60%;
+  box-shadow: 0px 0px 20px #000;
+  border-radius: 10px;
+}
+
+.popup_block#exp{
+background: rgba(230, 230, 250, 0.7);
+padding: 20px;
+border: 0 solid rgb(219, 54, 174, 0.4);
+position: relative;
+margin: 5% auto;
+width: 80%;
+box-shadow: 0px 0px 20px #000;
+border-radius: 10px;
+}
+
+img.btn_close {
+float: right;
+margin: -55px -55px 0 0;
+cursor: pointer;
+}
+
+.button{
+cursor: pointer;
+color: blue;
+text-decoration: underline;
+}
+/* Modal Box end */
+
+
+/* header & footer via include PHP */
+
+header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+  background-color: rgb(219, 54, 174);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, .3);
+}
+
+footer {
+position: fixed;
+height: 50px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+margin: 0px;
+background-color: rgb(219, 54, 174);
+color: white;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+box-shadow: 0 0 20px black;
+}
+
+/* In header & footer style of buttons */
+.tablink {
+  background-color: rgb(219, 54, 174);
+  color: #595959;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  height: 50px;
+  width: 25%;
+}
+
+.tablink-alone {
+  background-color: rgb(219, 54, 174);
+  color: #595959;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  height: 50px;
+  width: 100%;
+}
+
+/* In header & footer style of buttons on hover */
+.tablink:hover {
+  background-color: #595959;
+  color: rgb(219, 54, 174);
+}
+
+.tablink-alone:hover {
+  background-color: #777;
+  color: rgb(219, 54, 174);
+}
+
+/* Content */
+
+html {
+box-sizing: border-box;
+}
+
+body {
+background-image:url('../../assets/images/texture.png');
+background-position: bottom;
+background-attachment: fixed;
+width:100%;
+height:100%;
+}
+
+h1 {
+margin: 20px;
+text-align: center;
+color: rgb(219, 54, 174);
+}
+
+h1.first {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(219, 54, 174);
+}
+
+h1.second {
+font-family: 'Lobster', cursive;
+font-size: 5.5em;
+text-align: center;
+margin-top: 200px;
+color: rgb(219, 54, 174);
+}
+
+h2.second {
+font-family: 'Lobster', cursive;
+margin-bottom: 100px;
+text-align: center;
+color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.croix {
+  text-decoration: none;
+  color: rgb(219, 54, 174);
+  font-size: 1.5em;
+}
+
+p {
+  margin-left: 50px;
+  font-family: "Linux Libertine O";
+  font-size: 2em;
+}
+
+p.experiences {
+margin-left: 50px;
+font-family: "Linux Libertine O";
+font-size: 1.5em;
+line-height: 0.7em;
+}
+
+b {
+color: rgb(219, 54, 174);
+}

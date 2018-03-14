@@ -1,0 +1,50 @@
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  color: rgb(219, 54, 174);
+}
+
+h1.first {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(219, 54, 174);
+}
+
+h1.second {
+  margin: 5px;
+  text-align: center;
+  color: rgb(219, 54, 174);
+}
+
+/* Style the tab buttons */
+.tablink {
+    background-color: rgb(219, 54, 174);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style each tab content individually */
+#Formation {background-color:red;}
+#Expériences {background-color:green;}
+#Langues {background-color:blue;}
+#Objectif {background-color:orange;}
